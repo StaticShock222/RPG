@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Personagem/Heroi.csproj" />
+  <Project Path="RPG/RPG.csproj" />
+</Solution>
