@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Channels;
-using Heroi;
+using Personagem;
 class Program
 {
     static void Main(string[] args)
     {
-        var personagem = new Personagem()
+        var personagem = new Heroi()
         {
             Nome = "Gandalf",
             Classe = "Mago",

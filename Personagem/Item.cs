@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Heroi
+namespace Personagem
 {
     public class Item
     {

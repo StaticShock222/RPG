@@ -1,6 +1,6 @@
-﻿namespace Heroi
+﻿namespace Personagem
 {
-    public class Personagem
+    public class Heroi
     {
         private int _nivel;
         public string Nome { get; set; }
