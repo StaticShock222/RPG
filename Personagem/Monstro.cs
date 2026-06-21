@@ -6,18 +6,33 @@ namespace Heroi
 {
     public class Monstro
     {
+        public Monstro(string nomeMonstro, int pontosDeVida, int pontosDeAtaque, int recompensaXP, bool estaVivo)
+        {
+            NomeMonstro = nomeMonstro;
+            PontosDeVida = pontosDeVida;
+            PontosDeAtaque = pontosDeAtaque;
+            RecompensaXP = recompensaXP;
+            EstaVivo = estaVivo;
+        }
 
+        public Monstro(string nomeMonstro, int pontosDeVida, int pontosDeAtaque, int recompensaXP)
+        {
+            nomeMonstro = "Goblin";
+            pontosDeAtaque = 10;
+            pontosDeVida = 15;
+            recompensaXP = 20;
+        }
+
+        public Monstro()
+        {
+
+        }
 
         public string NomeMonstro { get; set; }
         public int PontosDeVida { get; set; }
         public int PontosDeAtaque { get; set; }
         public int RecompensaXP { get; set; }
-        public bool EstaVivo => true;
-
-        public object Nome { get; }
-        public object PontosDeVida1 { get; }
-        public object PontosDeAtaque1 { get; }
-        public object RecompensaXP1 { get; }
+        public bool EstaVivo { get; set; } = true;
 
 
 

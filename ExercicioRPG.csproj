@@ -1,0 +1,262 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{C5C82301-F2DA-5389-C862-EC99933EBBB7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>ExercicioRPG</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+    <Content Include=".git\ms-persist.xml" />
+    <Content Include="Personagem\bin\Debug\net10.0\Heroi.dll" />
+    <Content Include="Personagem\bin\Debug\net10.0\Heroi.pdb" />
+    <Content Include="Personagem\bin\Release\net10.0\Heroi.dll" />
+    <Content Include="Personagem\bin\Release\net10.0\Heroi.pdb" />
+    <Content Include="Personagem\Heroi.csproj.user" />
+    <Content Include="Personagem\obj\Debug\net10.0\Heroi.csproj.FileListAbsolute.txt" />
+    <Content Include="Personagem\obj\Debug\net10.0\Heroi.dll" />
+    <Content Include="Personagem\obj\Debug\net10.0\Heroi.pdb" />
+    <Content Include="Personagem\obj\Debug\net10.0\refint\Heroi.dll" />
+    <Content Include="Personagem\obj\Debug\net10.0\ref\Heroi.dll" />
+    <Content Include="Personagem\obj\Release\net10.0\Heroi.csproj.FileListAbsolute.txt" />
+    <Content Include="Personagem\obj\Release\net10.0\Heroi.dll" />
+    <Content Include="Personagem\obj\Release\net10.0\Heroi.pdb" />
+    <Content Include="Personagem\obj\Release\net10.0\PublishOutputs.dafba66fa0.txt" />
+    <Content Include="Personagem\obj\Release\net10.0\refint\Heroi.dll" />
+    <Content Include="Personagem\obj\Release\net10.0\ref\Heroi.dll" />
+    <Content Include="Personagem\Properties\PublishProfiles\FolderProfile.pubxml.user" />
+    <Content Include="RPG.slnx" />
+    <Content Include="RPG\bin\Debug\net10.0\Heroi.dll" />
+    <Content Include="RPG\bin\Debug\net10.0\Heroi.pdb" />
+    <Content Include="RPG\bin\Debug\net10.0\RPG.dll" />
+    <Content Include="RPG\bin\Debug\net10.0\RPG.exe" />
+    <Content Include="RPG\bin\Debug\net10.0\RPG.pdb" />
+    <Content Include="RPG\bin\Release\net10.0\Heroi.dll" />
+    <Content Include="RPG\bin\Release\net10.0\Heroi.pdb" />
+    <Content Include="RPG\bin\Release\net10.0\RPG.dll" />
+    <Content Include="RPG\bin\Release\net10.0\RPG.exe" />
+    <Content Include="RPG\bin\Release\net10.0\RPG.pdb" />
+    <Content Include="RPG\obj\Debug\net10.0\apphost.exe" />
+    <Content Include="RPG\obj\Debug\net10.0\refint\RPG.dll" />
+    <Content Include="RPG\obj\Debug\net10.0\ref\RPG.dll" />
+    <Content Include="RPG\obj\Debug\net10.0\RPG.csproj.FileListAbsolute.txt" />
+    <Content Include="RPG\obj\Debug\net10.0\RPG.dll" />
+    <Content Include="RPG\obj\Debug\net10.0\RPG.pdb" />
+    <Content Include="RPG\obj\Release\net10.0\apphost.exe" />
+    <Content Include="RPG\obj\Release\net10.0\refint\RPG.dll" />
+    <Content Include="RPG\obj\Release\net10.0\ref\RPG.dll" />
+    <Content Include="RPG\obj\Release\net10.0\RPG.csproj.FileListAbsolute.txt" />
+    <Content Include="RPG\obj\Release\net10.0\RPG.dll" />
+    <Content Include="RPG\obj\Release\net10.0\RPG.pdb" />
+    <Content Include="RPG\Properties\PublishProfiles\FolderProfile.pubxml.user" />
+    <Content Include="RPG\RPG.csproj.user" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-merge-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\push-to-checkout.sample" />
+    <None Include=".git\hooks\sendemail-validate.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\logs\refs\remotes\origin\master" />
+    <None Include=".git\objects\0f\a7926432af87db65e3d235ef4352f4476d15d6" />
+    <None Include=".git\objects\15\e2816a91764715fc3e6cd87cfaf74a9fc71280" />
+    <None Include=".git\objects\1b\c52a60a8ba3f1f529a2cf3a5bc58595e785f6c" />
+    <None Include=".git\objects\1f\f0c423042b46cb1d617b81efb715defbe8054d" />
+    <None Include=".git\objects\47\300853cfad678d8e63469cb0b0ea66c065d498" />
+    <None Include=".git\objects\4d\55aaa4a527d0c1df8815d5b68e1ff9daddd88e" />
+    <None Include=".git\objects\5b\edf1ca95547b12ca004d84f92b30ef2dd305c4" />
+    <None Include=".git\objects\7a\b280f4177739f4aa753fc11253cd67e14e3dbb" />
+    <None Include=".git\objects\7e\8057f6f0260a1a73f141666c4f0770d3d6d7c8" />
+    <None Include=".git\objects\94\91a2fda28342ab358eaf234e1afe0c07a53d62" />
+    <None Include=".git\objects\9b\892da70c2cab35f7e05a6cf2f289182aad6b13" />
+    <None Include=".git\objects\a6\d15909e98fd15061026c6073e3e23f09e9127d" />
+    <None Include=".git\objects\a6\ebe210d0aec96c7ccf2e9ebc55f00b570fce7e" />
+    <None Include=".git\objects\a8\d8a3ff8735ac8280113979837f6face2e54c83" />
+    <None Include=".git\objects\b7\60144708e78e674952c02b6553b53e44be0e5b" />
+    <None Include=".git\objects\e3\daf8b0a8fc2a2d73e89259c5afaf3f008067ee" />
+    <None Include=".git\objects\ed\9781c223ab97571e13f98c401aa0e9a1b55a4b" />
+    <None Include=".git\objects\f0\d3a70ceaa69fb70811f58254dc738e0f939eac" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".git\refs\remotes\origin\master" />
+    <None Include=".vs\ProjectEvaluation\rpg.metadata.v10.bin" />
+    <None Include=".vs\ProjectEvaluation\rpg.projects.v10.bin" />
+    <None Include=".vs\ProjectEvaluation\rpg.strings.v10.bin" />
+    <None Include=".vs\RPG.slnx\DesignTimeBuild\.dtbcache.v2" />
+    <None Include=".vs\RPG.slnx\FileContentIndex\3000a33d-e345-4404-885d-11e5180dbd27.vsidx" />
+    <None Include=".vs\RPG.slnx\FileContentIndex\3ec6b5ca-90b5-4e8c-93cd-3fa742ba19c0.vsidx" />
+    <None Include=".vs\RPG.slnx\FileContentIndex\462536af-4c1b-4187-8497-cb3b05b81c14.vsidx" />
+    <None Include=".vs\RPG.slnx\FileContentIndex\deacf1b4-1db3-4041-9fed-c68b619089f4.vsidx" />
+    <None Include=".vs\RPG.slnx\FileContentIndex\ff2b54a8-fecf-4358-aaa6-1fdb2e3c4273.vsidx" />
+    <None Include=".vs\RPG.slnx\v18\.futdcache.v2" />
+    <None Include=".vs\RPG.slnx\v18\.suo" />
+    <None Include=".vs\RPG.slnx\v18\DocumentLayout.backup.json" />
+    <None Include=".vs\RPG.slnx\v18\DocumentLayout.json" />
+    <None Include=".vs\RPG\CopilotIndices\18.7.1238.64283\CodeChunks.db" />
+    <None Include=".vs\RPG\CopilotIndices\18.7.1238.64283\SemanticSymbols.db" />
+    <None Include="Monstro\Monstro.csproj" />
+    <None Include="Monstro\obj\Monstro.csproj.nuget.dgspec.json" />
+    <None Include="Monstro\obj\Monstro.csproj.nuget.g.props" />
+    <None Include="Monstro\obj\Monstro.csproj.nuget.g.targets" />
+    <None Include="Monstro\obj\project.assets.json" />
+    <None Include="Monstro\obj\project.nuget.cache" />
+    <None Include="Monstro\obj\Release\net10.0\Monstro.AssemblyInfoInputs.cache" />
+    <None Include="Monstro\obj\Release\net10.0\Monstro.assets.cache" />
+    <None Include="Monstro\obj\Release\net10.0\Monstro.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Personagem\bin\Debug\net10.0\Heroi.deps.json" />
+    <None Include="Personagem\bin\Release\net10.0\Heroi.deps.json" />
+    <None Include="Personagem\Heroi.csproj" />
+    <None Include="Personagem\obj\Debug\net10.0\Heroi.AssemblyInfoInputs.cache" />
+    <None Include="Personagem\obj\Debug\net10.0\Heroi.assets.cache" />
+    <None Include="Personagem\obj\Debug\net10.0\Heroi.csproj.BuildWithSkipAnalyzers" />
+    <None Include="Personagem\obj\Debug\net10.0\Heroi.csproj.CoreCompileInputs.cache" />
+    <None Include="Personagem\obj\Debug\net10.0\Heroi.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Personagem\obj\Debug\net10.0\Heroi.sourcelink.json" />
+    <None Include="Personagem\obj\Debug\net10.0\Personagem.AssemblyInfoInputs.cache" />
+    <None Include="Personagem\obj\Debug\net10.0\Personagem.assets.cache" />
+    <None Include="Personagem\obj\Debug\net10.0\Personagem.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Personagem\obj\Heroi.csproj.nuget.dgspec.json" />
+    <None Include="Personagem\obj\Heroi.csproj.nuget.g.props" />
+    <None Include="Personagem\obj\Heroi.csproj.nuget.g.targets" />
+    <None Include="Personagem\obj\Personagem.csproj.nuget.dgspec.json" />
+    <None Include="Personagem\obj\Personagem.csproj.nuget.g.props" />
+    <None Include="Personagem\obj\Personagem.csproj.nuget.g.targets" />
+    <None Include="Personagem\obj\project.assets.json" />
+    <None Include="Personagem\obj\project.nuget.cache" />
+    <None Include="Personagem\obj\Release\net10.0\Heroi.AssemblyInfoInputs.cache" />
+    <None Include="Personagem\obj\Release\net10.0\Heroi.assets.cache" />
+    <None Include="Personagem\obj\Release\net10.0\Heroi.csproj.BuildWithSkipAnalyzers" />
+    <None Include="Personagem\obj\Release\net10.0\Heroi.csproj.CoreCompileInputs.cache" />
+    <None Include="Personagem\obj\Release\net10.0\Heroi.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Personagem\Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="RPG\bin\Debug\net10.0\RPG.deps.json" />
+    <None Include="RPG\bin\Debug\net10.0\RPG.runtimeconfig.json" />
+    <None Include="RPG\bin\Debug\RPG.1.0.0.nupkg" />
+    <None Include="RPG\bin\Release\net10.0\RPG.deps.json" />
+    <None Include="RPG\bin\Release\net10.0\RPG.runtimeconfig.json" />
+    <None Include="RPG\obj\Debug\net10.0\RPG.AssemblyInfoInputs.cache" />
+    <None Include="RPG\obj\Debug\net10.0\RPG.assets.cache" />
+    <None Include="RPG\obj\Debug\net10.0\RPG.csproj.AssemblyReference.cache" />
+    <None Include="RPG\obj\Debug\net10.0\RPG.csproj.BuildWithSkipAnalyzers" />
+    <None Include="RPG\obj\Debug\net10.0\RPG.csproj.CoreCompileInputs.cache" />
+    <None Include="RPG\obj\Debug\net10.0\RPG.csproj.Up2Date" />
+    <None Include="RPG\obj\Debug\net10.0\RPG.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="RPG\obj\Debug\net10.0\RPG.genruntimeconfig.cache" />
+    <None Include="RPG\obj\Debug\net10.0\RPG.sourcelink.json" />
+    <None Include="RPG\obj\Debug\RPG.1.0.0.nuspec" />
+    <None Include="RPG\obj\project.assets.json" />
+    <None Include="RPG\obj\project.nuget.cache" />
+    <None Include="RPG\obj\Release\net10.0\RPG.AssemblyInfoInputs.cache" />
+    <None Include="RPG\obj\Release\net10.0\RPG.assets.cache" />
+    <None Include="RPG\obj\Release\net10.0\RPG.csproj.AssemblyReference.cache" />
+    <None Include="RPG\obj\Release\net10.0\RPG.csproj.BuildWithSkipAnalyzers" />
+    <None Include="RPG\obj\Release\net10.0\RPG.csproj.CoreCompileInputs.cache" />
+    <None Include="RPG\obj\Release\net10.0\RPG.csproj.Up2Date" />
+    <None Include="RPG\obj\Release\net10.0\RPG.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="RPG\obj\Release\net10.0\RPG.genruntimeconfig.cache" />
+    <None Include="RPG\obj\Release\net10.0\RPG.sourcelink.json" />
+    <None Include="RPG\obj\RPG.csproj.nuget.dgspec.json" />
+    <None Include="RPG\obj\RPG.csproj.nuget.g.props" />
+    <None Include="RPG\obj\RPG.csproj.nuget.g.targets" />
+    <None Include="RPG\Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="RPG\RPG.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Monstro\obj\Release\net10.0\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs" />
+    <Compile Include="Monstro\obj\Release\net10.0\Monstro.AssemblyInfo.cs" />
+    <Compile Include="Monstro\obj\Release\net10.0\Monstro.GlobalUsings.g.cs" />
+    <Compile Include="Monstro\Program.cs" />
+    <Compile Include="Personagem\Item.cs" />
+    <Compile Include="Personagem\Monstro.cs" />
+    <Compile Include="Personagem\obj\Debug\net10.0\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs" />
+    <Compile Include="Personagem\obj\Debug\net10.0\Heroi.AssemblyInfo.cs" />
+    <Compile Include="Personagem\obj\Debug\net10.0\Heroi.GlobalUsings.g.cs" />
+    <Compile Include="Personagem\obj\Debug\net10.0\Personagem.AssemblyInfo.cs" />
+    <Compile Include="Personagem\obj\Debug\net10.0\Personagem.GlobalUsings.g.cs" />
+    <Compile Include="Personagem\obj\Release\net10.0\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs" />
+    <Compile Include="Personagem\obj\Release\net10.0\Heroi.AssemblyInfo.cs" />
+    <Compile Include="Personagem\obj\Release\net10.0\Heroi.GlobalUsings.g.cs" />
+    <Compile Include="Personagem\Personagem.cs" />
+    <Compile Include="RPG\obj\Debug\net10.0\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs" />
+    <Compile Include="RPG\obj\Debug\net10.0\RPG.AssemblyInfo.cs" />
+    <Compile Include="RPG\obj\Debug\net10.0\RPG.GlobalUsings.g.cs" />
+    <Compile Include="RPG\obj\Release\net10.0\.NETCoreApp,Version=v10.0.AssemblyAttributes.cs" />
+    <Compile Include="RPG\obj\Release\net10.0\RPG.AssemblyInfo.cs" />
+    <Compile Include="RPG\obj\Release\net10.0\RPG.GlobalUsings.g.cs" />
+    <Compile Include="RPG\Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".github\workflows\" />
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\ExercicioRPG.slnx\copilot-chat\a9595bbc\sessions\" />
+    <Folder Include=".vs\ExercicioRPG.slnx\v18\" />
+    <Folder Include=".vs\RPG.slnx\copilot-chat\a9595bbc\sessions\" />
+    <Folder Include=".vs\sd\" />
+    <Folder Include="Monstro\bin\Release\net10.0\" />
+    <Folder Include="Monstro\obj\Release\net10.0\refint\" />
+    <Folder Include="Monstro\obj\Release\net10.0\ref\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
