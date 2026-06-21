@@ -6,7 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        var personagem = new Heroi()
+        var heroi = new Heroi()
         {
             Nome = "Gandalf",
             Classe = "Mago",
@@ -24,9 +24,9 @@ class Program
         var monstro = new Monstro();
         {
             monstro.NomeMonstro = "Balrog";
-            monstro.PontosDeAtaque = 100;
-            monstro.PontosDeVida = 200;
-            monstro.RecompensaXP = 500;
+            monstro.PontosDeAtaque = 10;
+            monstro.PontosDeVida = 20;
+            monstro.RecompensaXP = 50;
             monstro.EstaVivo = true;
         }
         ;
@@ -42,9 +42,14 @@ class Program
         Console.Write("Recompensa em XP: ");
         monstro2.RecompensaXP = int.Parse(Console.ReadLine());
         Console.WriteLine($"Está vivo: {monstro2.EstaVivo}");
-        Console.WriteLine($"Personagem: {personagem.Nome}, Classe: {personagem.Classe}, Nível: {personagem.Nivel}");
+        Console.WriteLine($"Personagem: {heroi.Nome}, Classe: {heroi.Classe}, Nível: {heroi.Nivel}");
         Console.WriteLine($"Item: {item.Nome}, Tipo: {item.Tipo}, Raridade: {item.Raridade}");
         Console.WriteLine($"Monstro: {monstro.NomeMonstro}, Vida: {monstro.PontosDeVida}, Ataque: {monstro.PontosDeAtaque}, XP: {monstro.RecompensaXP}");
         Console.WriteLine($"Monstro 2: {monstro2.NomeMonstro}, Vida: {monstro2.PontosDeVida}, Ataque: {monstro2.PontosDeAtaque}, XP: {monstro2.RecompensaXP}");
+        
+        int ResultadoAtaque = heroi.Ataque(monstro.PontosDeAtaque);
+        int ResultadoAtaque2 = monstro.Ataque(heroi.PontosDeAtaque);
+        Console.WriteLine("Resultado do ataque: " + ResultadoAtaque);
+        Console.WriteLine("Resultado do ataque 2: " + ResultadoAtaque2);
     }
 }

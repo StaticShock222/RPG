@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Personagem
 {
-    public class Monstro
+    public class Monstro:Personagem
     {
         public Monstro(string nomeMonstro, int pontosDeVida, int pontosDeAtaque, int recompensaXP, bool estaVivo)
         {
@@ -29,13 +29,21 @@ namespace Personagem
         }
 
         public string NomeMonstro { get; set; }
-        public int PontosDeVida { get; set; }
-        public int PontosDeAtaque { get; set; }
         public int RecompensaXP { get; set; }
         public bool EstaVivo { get; set; } = true;
 
+        public int Ataque(int PontosDeAtaque)
+        {
+            if (Nivel > 1)
+            {
+                PontosDeAtaque++;
+            }
+            PontosDeVida -= PontosDeAtaque;
+            EstaVivo = PontosDeVida > 0;
+            return PontosDeVida;
+        }
 
-
+        
     }
     
 }
